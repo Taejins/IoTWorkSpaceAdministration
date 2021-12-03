@@ -3,6 +3,7 @@ IoT 클라우드 플랫폼 프로젝트에 사용한 코드입니다.
 1. AWS_GPS <br>
 아두이노 IDE를 이용한 코드 파일입니다.
 MKR1010 Wifi 기종을 사용하였고 NEO 6m GPS 모듈, LCD I2C 모듈 등을 사용하였고 부수적으로 버튼 2개, 부저 1개, LED 1개 이용하여 작업하였습니다.
+사용시 arduino_secrets.h 파일에서 WIFI이름과 비밀번호를 입력 후 AWS 사물 엔드포인트와 CERT인증서를 입력하면 됩니다.
 
 2. WSAP_Web <br>
 html과 javascript로 이루어진 웹페이지 파일입니다. 
