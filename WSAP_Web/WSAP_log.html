@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WSAP Log</title>
+    <style type="text/css">
+        #header {
+            background-color:lightgrey;
+            height:100px;
+        }
+        #map {
+            border: 2px solid blue;
+            background-color:#339999;
+            color:white;
+            width:100%;
+            height:50px;
+        }
+        #section {
+            width:100%;
+            text-align:left;
+            padding:10px;
+        }
+        #footer {
+            background-color:#FFCC00;
+            height:100px;
+            clear:both;
+        }
+        td {
+            height:20px;
+        }
+        #header, #nav, #section, #footer { text-align:center; }
+        #header, #footer { line-height:100px; }
+        #nav, #section { line-height:10px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="event_log.js"></script>
+    <script src="Location_log.js"></script>
+
+
+
+
+</head>
+
+<body>
+    
+    <div id="header">
+        <h1>WSAP 로그 페이지</h1>
+
+    </div>
+    <div id="map">
+        <input id="start" type="date">
+        <input id="end" type="date">
+        <input type="button" value="조회 시작" onclick="log();" />
+        
+    </div>
+    <div id="section">
+        <h4>작업 로그 조회</h4>
+        <div id="section1" style="height: 300px; overflow: auto">
+            <table id="event_log" width="100%" >
+            </table>
+        </div>
+        <h4>좌표 로그 조회</h4>
+        <div id="section2" style="height: 300px; overflow: auto">
+            <table id="location_log" width="100%" >
+            </table>
+        </div>
+        
+    </div>
+    <div id="footer">
+        <button onclick="document.location.href='WSAP_realtime.html'">실시간 페이지로</button>
+
+    </div>
+
+</body>
+
+</html>
